@@ -2,6 +2,7 @@
   <div>
     <Header />
     <Hero />
+    <Card />
   </div>
 </template>
 
