@@ -1,5 +1,5 @@
 <template lang="pug">
-.hero.w-full.mt-5
+.hero.w-full.mt-2
   .hero__inner.container.mx-auto.flex.justify-end
     //- .hero__content
     //-   .hero__title
@@ -7,7 +7,7 @@
     .hero__wrap
       .hero__cover
       .hero__img
-        img(src="~assets/foodfactory.jpg")
+        img(src="~assets/header-image.jpg")
 </template>
 <script>
 export default {

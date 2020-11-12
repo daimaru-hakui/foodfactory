@@ -47,7 +47,7 @@ export default {
 <style scoped lang="scss">
 .card {
   &__inner {
-    background-color: #E3F7F8;
+    background-color: #d7eefe;
   }
 }
 </style>

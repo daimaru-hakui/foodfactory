@@ -27,7 +27,7 @@ export default {
 .header {
   &__inner {
     width: 100%;
-    height: 100px;
+    height: 80px;
     // @media screen and (min-width: 768px) {
     //   width: 1000px;
     // }
