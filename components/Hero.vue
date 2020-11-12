@@ -19,13 +19,13 @@ export default {
           start: "top top",
         },
       });
-      tm.to(cover, 0.5, {
+      tm.to(cover, 1, {
         delay: 1,
         top: 0,
         bottom: 0,
-        ease: Power4.easeIn,
+        ease: Power4.easeOut,
       });
-      tm.to(cover, 0.7, { top: 0, bottom: "100%", ease: Power4.easeIn });
+      tm.to(cover, 0.7, { top: 0, bottom: "100%", ease: Power4.easeOut });
       tm.to(img, 0.7, { opacity: 1 }, "-=0.5");
     },
   },
