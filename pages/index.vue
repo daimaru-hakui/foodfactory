@@ -2,7 +2,12 @@
   <div>
     <Header />
     <Hero />
+    <Title>
+      <template v-slot:title-en>PRODUCT LINE-UP</template>
+      <template v-slot:title-ja>商品ラインナップ</template>
+    </Title>
     <Card />
+    <Footer />
   </div>
 </template>
 
@@ -21,7 +26,6 @@ export default {};
     "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   display: block;
   font-weight: 300;
-  font-size: 100px;
   color: #35495e;
   letter-spacing: 1px;
 }

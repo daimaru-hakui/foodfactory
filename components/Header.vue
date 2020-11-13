@@ -5,7 +5,7 @@ header.header.w-full
       svgLogo
     nav.header__nav
       ul.header__ul.flex
-        li.header__li.ml-2(
+        li.header__li.ml-5.font-bold.text-sm(
           v-for="(category, index) in categorys",
           :key="index"
         ) {{ category }}
@@ -18,7 +18,7 @@ export default {
   },
   data() {
     return {
-      categorys: ["Home", "About", "Contact"],
+      categorys: ["HOME", "ABOUT", "CONTACT"],
     };
   },
 };
@@ -27,7 +27,7 @@ export default {
 .header {
   &__inner {
     width: 100%;
-    height: 80px;
+    height: 70px;
     // @media screen and (min-width: 768px) {
     //   width: 1000px;
     // }
