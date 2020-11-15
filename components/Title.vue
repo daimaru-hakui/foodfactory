@@ -8,6 +8,6 @@
 </template>
 <style scoped lang="scss">
 .title {
-  margin: 5rem 0 3rem;
+  margin: 5rem 0 2rem;
 }
 </style>
