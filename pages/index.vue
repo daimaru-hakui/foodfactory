@@ -7,6 +7,7 @@
       <template v-slot:title-ja>厳選された商品ラインナップ</template>
     </Title>
     <Card />
+    <Contents />
     <Footer />
   </div>
 </template>
