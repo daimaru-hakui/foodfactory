@@ -2,9 +2,7 @@
 .hero.w-full
   .hero__inner.container.mx-auto.flex.justify-end.relative
     .hero__content.absolute.w-full.flex.flex-col.items-center
-      .hero__title.font-bold 
-        span.under-yellow 食の安全・安心
-        span を支える
+      .hero__title.font-bold 「食の安全・安心」を支える
       .hero__desc.font-bold HACCP対応ユニフォーム
     .hero__wrap
       .hero__cover

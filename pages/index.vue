@@ -3,8 +3,8 @@
     <Header />
     <Hero />
     <Title>
-      <template v-slot:title-en>職場の環境から選択できる</template>
-      <template v-slot:title-ja>厳選された商品ラインナップ</template>
+      <template v-slot:title-en>PRODUCT LINE-UP</template>
+      <template v-slot:title-ja>商品ラインナップ</template>
     </Title>
     <Card />
     <Contents />
