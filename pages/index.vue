@@ -8,6 +8,7 @@
     </Title>
     <Card />
     <Contents />
+    <Contact />
     <Footer />
   </div>
 </template>

@@ -3,7 +3,7 @@
   .title__inner.container.mx-auto.flex.flex-col.text-center.font-bold.text-black
     .title__en.text-3xl
       <slot name="title-en" />
-    .title_ja.text-2xl
+    .title_ja.text-3xl
       <slot name="title-ja" />
 </template>
 <style scoped lang="scss">
