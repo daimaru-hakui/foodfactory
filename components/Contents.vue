@@ -1,20 +1,32 @@
 <template lang="pug">
 section.contents.mb-10
-  .contents__inner.container.mx-auto.flex.flex-col.w-full(class="md:flex-row")
-    .contents__boxleft.w-full.p-5(class="md:w-1/2")
-      .contents__title.mb-5.text-lg HACCPについて
-      .contents__text.text-sm 2018年6月に行われた食品衛生法の改正に伴い、食品製造業を対象にHACCPへの対応が義務付けられました。2021年6月の猶予期間終了までのHACCPの導入が急務となっていますが、そもそもHACCPとは一体何なのか？食品工場向けのユニフォームの製造・販売する当社の視点から、HACCPの基礎や食品工場での衛生管理、ユニフォームによるHACCP対策などをご紹介する記事を作成いたしました。是非、貴社のHACCP対策にお役立てください。
-    .contents__boxright.w-full.p-5(class="md:w-1/2")
-      .contents__title.mb-5.text-lg 食品安全マネジメントシステム(FSMS)とは
-      .contents__text.text-sm FSMSとはFood Safety Management System の頭文字をとったもので、食品安全マネジメントシステムと表記されます。安心・安全な食品を消費者に届けるために、食品安全を脅かすハザード(危害)を適切に管理する仕組みによる保証を目指したものです。グローバル化した社会で通用する食品安全規格として、ISO 22000(食品安全マネジメントシステム-フードチェーンの組織に対する要求事項)やFSSC 22000(食品安全システム認証22000)などがあります。
+  .contents__inner.mx-auto.mt-20.flex.flex-col.w-full(class="md:flex-row")
+    .contents__boxtext.w-full.p-5(class="md:w-3/6")
+      .contents__title.mb-5.font-bold.text-3xl HACCPについて
+      .contents__text.text-sm.leading-6.tracking-wider(v-html="haccpText") 
+    .contents__image.m-5(class="md:w-3/6")
+      img.rounded-xl(src="../assets/haccp.jpg")
 </template>
+<script>
+export default {
+  data() {
+    return {
+      haccpText:
+        "我々の食の安全を守るための法律、食品衛生法が2018年6月に改正。<br>2020年から施工され、１年の経過措置を経て2021年6月から食品等事業者を対象にHACCPによる衛生管理が義務化されることになりました。<br>これにより事業規模に関わらず食品製造業者はHACCPに沿った衛生管理に取り組んでいく必要がありますが、そもそもHACCPとは一体どのようなものなのでしょうか？<br>ここではHACCPについての基礎知識からHACCPの取り組み方、そしてユニフォームによるHACCP対策など、弊社が収集した情報や知識などをご紹介致します。<br>是非、貴社のHACCP対策にお役立てください。",
+    };
+  },
+};
+</script>
 <style scoped lang="scss">
 .contents {
+  &__inner {
+    width: 100%;
+    @media screen and (min-width: 768px) {
+      width: 1100px;
+    }
+  }
   &__boxright {
     // background-color: #1c3482;
-  }
-  &__boxleft {
-    //   background-color: #00a3e8;
   }
 }
 </style>

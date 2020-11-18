@@ -46,7 +46,7 @@ export default {
   }
   &__title {
     font-size: 1rem;
-    color: #3d7df1;
+    color: #639eda;
     text-shadow: 2px 2px 10px #fff;
     @media screen and (min-width: 480px) {
       font-size: 2rem;
@@ -73,7 +73,7 @@ export default {
     width: 100%;
     top: 100%;
     bottom: 0;
-    background-color: #2979dc;
+    background-color: #639eda;
     z-index: 1;
   }
   & img {

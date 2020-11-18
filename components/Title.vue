@@ -1,5 +1,5 @@
 <template lang="pug">
-.title.mt-10
+.title.mt-20
   .title__inner.container.mx-auto.flex.flex-col.text-center.font-bold.text-black
     .title__en.text-3xl
       <slot name="title-en" />
