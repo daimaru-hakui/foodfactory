@@ -5,10 +5,12 @@ header.header.w-full
       svgLogo
     nav.header__nav
       ul.header__ul.flex
-        li.header__li.ml-5.font-bold.text-sm(
+        a(
           v-for="(category, index) in categorys",
-          :key="index"
-        ) {{ category }}
+          :key="index",
+          :href="category.link"
+        )
+          li.header__li.ml-5.font-bold.text-sm {{ category.title }}
 </template>
 <script>
 import svgLogo from "../assets/logo.svg";
@@ -18,7 +20,20 @@ export default {
   },
   data() {
     return {
-      categorys: ["HOME", "ABOUT", "CONTACT"],
+      categorys: [
+        {
+          title: "HOME",
+          link: "http://www.daimaru-hakui.co.jp/index.html",
+        },
+        {
+          title: "COMPANY",
+          link: "http://www.daimaru-hakui.co.jp/company.html",
+        },
+        {
+          title: "CONTACT",
+          link: "http://www.daimaru-hakui.co.jp/contact.html",
+        },
+      ],
     };
   },
 };

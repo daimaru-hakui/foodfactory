@@ -54,6 +54,29 @@ export default {
       ],
     };
   },
+  methods: {
+    fadeCard(selector) {
+      let tm = new TimelineMax({
+        scrollTrigger: {
+          trigger: ".card", // 要素".a"がビューポートに入ったときにアニメーション開始
+          start: "top bottom",
+          // markers: true,
+        },
+      });
+      tm.staggerFrom(
+        selector,
+        1,
+        {
+          opacity: 0,
+          y: "100px",
+        },
+        0.1
+      );
+    },
+  },
+  mounted() {
+    this.fadeCard(".card");
+  },
 };
 </script>
 <style scoped lang="scss">
