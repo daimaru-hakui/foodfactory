@@ -6,7 +6,7 @@ section.contents.mb-10
       .contents__text.text-sm.leading-6.tracking-wider(v-html="haccpText") 
       span.contents__button.mt-4.py-2.px-5.inline-block ⇒ READ MORE
     .contents__image.m-5(class="md:w-3/6")
-      img.rounded-xl(src="../assets/haccp.jpg")
+      img.rounded-xl(src="~/assets/haccp.jpg")
 </template>
 <script>
 export default {

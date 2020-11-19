@@ -1,4 +1,8 @@
 export default {
+  // buildDir: 'food-factory',
+  router: {
+    base: '/food-factory/'
+   },
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'server',
 

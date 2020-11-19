@@ -7,7 +7,7 @@
     .hero__wrap
       .hero__cover
       .hero__img
-        img(src="~assets/header-image.jpg")
+        img(src="~/assets/header-image.jpg")
 </template>
 <script>
 export default {
