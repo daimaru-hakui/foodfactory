@@ -16,6 +16,25 @@ export default {
         "我々の食の安全を守るための法律、食品衛生法が2018年6月に改正。<br>2020年から施工され、１年の経過措置を経て2021年6月から食品等事業者を対象にHACCPによる衛生管理が義務化されることになりました。<br>これにより事業規模に関わらず食品製造業者はHACCPに沿った衛生管理に取り組んでいく必要がありますが、そもそもHACCPとは一体どのようなものなのでしょうか？<br>ここではHACCPについての基礎知識からHACCPの取り組み方、そしてユニフォームによるHACCP対策など、弊社が収集した情報や知識などをご紹介致します。<br>是非、貴社のHACCP対策にお役立てください。",
     };
   },
+  methods: {
+    fadeContent(selector, size) {
+      let tm = new TimelineMax({
+        scrollTrigger: {
+          trigger: selector,
+          start: "top bottom",
+        },
+      });
+      tm.from(selector, 1, {
+        delay: 0.5,
+        x: size,
+        opacity: 0,
+      });
+    },
+  },
+  mounted() {
+    this.fadeContent(".contents__boxtext", "-100px");
+    this.fadeContent(".contents__image", "100px");
+  },
 };
 </script>
 <style scoped lang="scss">
